@@ -50,12 +50,26 @@ function mostrarMensaje(username) {
   messagesContainer.innerHTML = `Bienvenido/a, ${username}!`;
   logoutButton.classList.remove("hidden");
   textoAlt.classList.add("hidden");
+  setTimeout(promo, 8000)
 }
 
-function promo(){
-  // alert("promo")
+function promo() {
+  Swal.fire({
+    title: "Remeras en promoción!",
+    text: "No te lo pierdas...",
+    imageUrl: "./images/remeras_random.jpg",
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: "tres remeras de color blanco, azul y negra con el logo de UnionGym",
+    color: "red",
+    confirmButtonColor: "#e44d26",
+    background: "#f5f5f5",
+    position: "top-end",
+    showClass: {
+      popup: 'swal2-show',
+    },
+  });
 }
-setInterval(promo, 8000)
 
 function cerrarSesion() {
   messagesContainer.innerHTML = "Sesión cerrada";
