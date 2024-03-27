@@ -131,6 +131,10 @@ footer .redes-sociales .redes:hover {
 #galeria .card img {
   height: 200px;
   width: 90% vw;
+  transition: transform 0.5s ease;
+}
+#galeria .card img:hover {
+  transform: scale(1.2);
 }
 #galeria .btn-carrito {
   background-color: #e44d26;
@@ -153,12 +157,18 @@ footer .redes-sociales .redes:hover {
 #galeriaApi .card {
   border: 1px solid #666;
   padding: 10px;
+  margin-top: 10px;
   text-align: center;
   border-radius: 15px;
 }
 #galeriaApi .card img {
   height: 200px;
   width: 90% vw;
+  transition: transform 0.5s ease;
+}
+#galeriaApi .card img:hover {
+  transform: scale(1.2);
+  border-radius: 15px;
 }
 #galeriaApi .btn-carrito {
   background-color: #e44d26;
@@ -173,6 +183,8 @@ footer .redes-sociales .redes:hover {
 }
 
 #carrito {
+  background-color: #f5f5f5;
+  border-radius: 20px;
   margin-top: 20px;
   border: 1px solid #ccc;
   padding: 10px;

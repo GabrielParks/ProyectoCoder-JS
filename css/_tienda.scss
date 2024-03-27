@@ -33,6 +33,10 @@
     img{
       height: 200px;
       width: 90%vw;
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.2);
     }
   }
   .btn-carrito {
@@ -55,11 +59,17 @@
   .card {
     border: 1px solid $colorLetraSec;
     padding: 10px;
+    margin-top: 10px;
     text-align: center;
     border-radius: 15px;
     img{
       height: 200px;
       width: 90%vw;
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.2);
+      border-radius: 15px;
     }
   }
   .btn-carrito {
@@ -75,6 +85,8 @@
 }
 
 #carrito {
+  background-color: #f5f5f5;
+  border-radius: 20px;
   margin-top: 20px;
   border: 1px solid #ccc;
   padding: 10px;

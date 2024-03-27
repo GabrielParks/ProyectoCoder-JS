@@ -52,6 +52,11 @@ function mostrarMensaje(username) {
   textoAlt.classList.add("hidden");
 }
 
+function promo(){
+  // alert("promo")
+}
+setInterval(promo, 8000)
+
 function cerrarSesion() {
   messagesContainer.innerHTML = "Sesión cerrada";
   logoutButton.classList.add("hidden");
@@ -61,19 +66,18 @@ function cerrarSesion() {
 }
 
 class Articulo {
-  constructor(nombre, precio, volumen, cantidad, imagen) {
+  constructor(nombre, precio, volumen, imagen) {
     this.nombre = nombre;
     this.precio = parseFloat(precio.replace("$", ""));
     this.volumen = volumen;
-    this.cantidad = cantidad;
     this.imagen = imagen;
   }
 }
 
-productos.push(new Articulo("Proteina", "$ 2000", "XL", 8, "./images/proteina.jpeg"));
-productos.push(new Articulo("Creatinina", "$ 1500", "L", 5, "./images/creatina.jpeg"));
-productos.push(new Articulo("Aminoacidos", "$ 3000", "XXL", 10, "./images/aminoacidos.jpeg"));
-productos.push(new Articulo("Proteina de Suero", "$ 4000", "S", 3, "./images/proteina_de_suero.jpeg"));
+productos.push(new Articulo("Proteina", "$ 2000", "XL","./images/proteina.jpeg"));
+productos.push(new Articulo("Creatinina", "$ 1500", "L","./images/creatina.jpeg"));
+productos.push(new Articulo("Aminoacidos", "$ 3000", "XXL", "./images/aminoacidos.jpg"));
+productos.push(new Articulo("Proteina de Suero", "$ 4000", "S","./images/proteina_de_suero.jpeg"));
 
 function mostrarProductos() {
   const galeria = document.querySelector("#galeria");
@@ -85,8 +89,7 @@ function mostrarProductos() {
 		<h4><b>${producto.nombre}</b></h4>
 		<p> Precio: <b>$${formatoDinero(producto.precio)}</b></p>
 		<p> Tamaño: <b>${producto.volumen}</b></p>
-		<p> Cantidad: <b>${producto.cantidad}</b></p>
-		`;
+		`
 
     let agregarAlCarritoBtn = document.createElement("button");
     agregarAlCarritoBtn.textContent = "Agregar al carrito";
@@ -101,7 +104,7 @@ function mostrarProductos() {
 }
 mostrarProductos();
 
-const urlApi = `../archivo.json`;
+const urlApi = `./archivo.json`;
 fetch(urlApi)
 	.then((respuesta) => {
     	return respuesta.json();
@@ -217,3 +220,4 @@ function mostrarTotalCarrito() {
 function formatoDinero(valor) {
   return valor.toFixed(2);
 }
+
