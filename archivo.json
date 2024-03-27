@@ -1,24 +1,34 @@
 [
-    {
-      "id": 1,
-      "foto": "./images/remera_roja.jpg",
-      "nombre": "Remera Roja",
-      "precio": 2500,
-      "talles": ["S", "M", "L"]
-    },
-    {
-      "id": 2,
-      "foto": "./images/remera_negra.jpg",
-      "nombre": "Remera Negra",
-      "precio": 2500,
-      "talles": ["M", "L", "XL"]
-    },
-    {
-      "id": 3,
-      "foto": "./images/remera_verde.jpg",
-      "nombre": "Remera Verde",
-      "precio": 2250,
-      "talles": ["S", "L"]
-    }
+  {
+    "id": 1,
+    "foto": "./images/remera_roja.jpg",
+    "nombre": "Remera Roja",
+    "precio": 2500,
+    "talles": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 2,
+    "foto": "./images/remera_negra.jpg",
+    "nombre": "Remera Negra",
+    "precio": 2500,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": 3,
+    "foto": "./images/remera_verde.jpg",
+    "nombre": "Remera Verde",
+    "precio": 2250,
+    "talles": [
+      "S",
+      "L"
+    ]
+  }
 ]
-  

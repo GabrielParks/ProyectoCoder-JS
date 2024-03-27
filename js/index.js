@@ -70,24 +70,10 @@ class Articulo {
   }
 }
 
-productos.push(
-  new Articulo("Proteina", "$ 200", "XL", 8, "./images/proteina.jpeg")
-);
-productos.push(
-  new Articulo("Creatinina", "$ 150", "L", 5, "./images/creatina.jpeg")
-);
-productos.push(
-  new Articulo("Aminoacidos", "$ 300", "XXL", 10, "./images/aminoacidos.jpeg")
-);
-productos.push(
-  new Articulo(
-    "Proteina de S",
-    "$ 400",
-    "S",
-    3,
-    "./images/proteina_de_suero.jpeg"
-  )
-);
+productos.push(new Articulo("Proteina", "$ 2000", "XL", 8, "./images/proteina.jpeg"));
+productos.push(new Articulo("Creatinina", "$ 1500", "L", 5, "./images/creatina.jpeg"));
+productos.push(new Articulo("Aminoacidos", "$ 3000", "XXL", 10, "./images/aminoacidos.jpeg"));
+productos.push(new Articulo("Proteina de Suero", "$ 4000", "S", 3, "./images/proteina_de_suero.jpeg"));
 
 function mostrarProductos() {
   const galeria = document.querySelector("#galeria");
@@ -98,7 +84,7 @@ function mostrarProductos() {
 		<img src="${producto.imagen}">
 		<h4><b>${producto.nombre}</b></h4>
 		<p> Precio: <b>$${formatoDinero(producto.precio)}</b></p>
-		<p> Volumen: <b>${producto.volumen}</b></p>
+		<p> Tamaño: <b>${producto.volumen}</b></p>
 		<p> Cantidad: <b>${producto.cantidad}</b></p>
 		`;
 
@@ -131,8 +117,8 @@ fetch(urlApi)
     	div.innerHTML = `
             <img src="${remera.foto}"/>
             <h4>${remera.nombre}</h4>
-            <p><b>Precio: $${remera.precio}</b></p>
-            <p><b>Talle: ${remera.talles}</b></p>
+            <p>Precio: <b>$${remera.precio}</b></p>
+            <p>Talle: <b>${remera.talles}</b></p>
             `;
 
     	let agregarAlCarritoBtn = document.createElement("button");
