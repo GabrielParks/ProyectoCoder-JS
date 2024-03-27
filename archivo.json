@@ -2,6 +2,7 @@
   {
     "id": 1,
     "foto": "./images/remera_roja.jpg",
+    "alt": "Imagen de remera roja con el logo de Union GYM en letras de color gris",
     "nombre": "Remera Roja",
     "precio": 2500,
     "talles": ["S", "M", "L"]
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "foto": "./images/remera_negra.jpg",
+    "alt": "Imagen de remera negra con el logo de Union GYM en letras de color blanco",
     "nombre": "Remera Negra",
     "precio": 2500,
     "talles": ["M", "L", "XL"]
@@ -16,6 +18,7 @@
   {
     "id": 3,
     "foto": "./images/remera_verde.jpg",
+    "alt": "Imagen de remera verde con el logo de Union GYM en letras de color gris y blanco",
     "nombre": "Remera Verde",
     "precio": 2250,
     "talles": ["S", "L"]

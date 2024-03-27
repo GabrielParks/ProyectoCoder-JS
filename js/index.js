@@ -234,4 +234,3 @@ function mostrarTotalCarrito() {
 function formatoDinero(valor) {
   return valor.toFixed(2);
 }
-
