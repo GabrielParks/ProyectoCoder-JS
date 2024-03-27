@@ -101,7 +101,7 @@ function mostrarProductos() {
 }
 mostrarProductos();
 
-const urlApi = `../archivo.json`;
+const urlApi = `./archivo.json`;
 fetch(urlApi)
 	.then((respuesta) => {
     	return respuesta.json();
