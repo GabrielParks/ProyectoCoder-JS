@@ -1,0 +1,153 @@
+#Tienda {
+  text-align: center;
+  padding: 20px;
+  #loginForm {
+    margin-top: 20px;
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+      max-width: 300px;
+      border-radius: 15px;
+    }
+  }
+  .btn {
+    @include button($colorLetra, $colorFondo);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: $colorHover;
+  }
+}
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  .card {
+    border: 1px solid $colorLetraSec;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    img{
+      height: 200px;
+      width: 90%vw;
+    }
+  }
+  .btn-carrito {
+    @include button($colorLetra, $colorFondo);
+    padding: 5px;
+    margin-left: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .btn-carrito:hover {
+    background-color: $colorHover;
+  }
+}
+
+#galeriaApi{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  .card {
+    border: 1px solid $colorLetraSec;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    img{
+      height: 200px;
+      width: 90%vw;
+    }
+  }
+  .btn-carrito {
+    @include button($colorLetra, $colorFondo);
+    padding: 5px;
+    margin-left: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .btn-carrito:hover {
+    background-color: $colorHover;
+  }
+}
+
+#carrito {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  #listaCarrito {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      .carrito {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+      .btn-carrito {
+        background-color: $colorLetra;
+        color: $colorFondo;
+        padding: 5px;
+        margin-left: 4px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .btn-carrito:hover {
+        background-color: $colorHover;
+      }
+    }
+  }
+  #totalCarrito {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .field {
+    margin-bottom: 10px;
+    label {
+      display: block;
+      color: #777;
+    }
+    input {
+      text-align: center;
+      display: block;
+      min-width: 250px;
+      line-height: 1.5;
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 10px;
+      max-width: 300px;
+      border-radius: 15px;
+    }
+  }
+  input[type="submit"] {
+    background-color: $colorLetra;
+    color: $colorFondo;
+    display: block;
+    padding: 6px 30px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  input[type="submit"]:hover {
+    background-color: $colorHover;
+  }
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mi-video {
+  width: 100%;
+  border-radius: 15px;
+}
+
+h1, h2, h3 {
+  color: #e44d26;
+  text-align: center;
+}
+
+p {
+  color: #666;
+}
+
+.header {
+  background-color: #f5f5f5;
+}
+.header a {
+  font-size: 20px;
+  text-shadow: 1px 1px grey;
+  color: #e44d26;
+}
+.header a .logo {
+  height: 90px;
+  float: left;
+}
+.header a .header_marca {
+  font-family: "Gill Sans";
+  font-weight: bold;
+}
+.header a strong:hover {
+  color: blue;
+}
+.header a:hover {
+  color: blue;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+footer .img-footer img {
+  height: 200px;
+  border-radius: 50%;
+}
+footer .enlaces {
+  font-size: 18px;
+}
+footer .enlaces ul {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+footer .enlaces ul li {
+  list-style: none;
+}
+footer .enlaces ul li a {
+  text-decoration: none;
+  color: #e44d26;
+}
+footer .enlaces ul li a:hover {
+  color: blue;
+}
+footer .redes-sociales {
+  transition: all 0.5s ease;
+  line-height: 50px;
+}
+footer .redes-sociales .redes {
+  font-size: 50px;
+  cursor: pointer;
+  padding-top: 20px;
+}
+footer .redes-sociales .redes:hover {
+  color: blue;
+  font-size: 65px;
+  padding-top: 10px;
+}
+
+.subir {
+  height: 40px;
+  color: red;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 30px;
+}
+
+#Tienda {
+  text-align: center;
+  padding: 20px;
+}
+#Tienda #loginForm {
+  margin-top: 20px;
+}
+#Tienda #loginForm input {
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  border-radius: 15px;
+}
+#Tienda .btn {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#Tienda .btn:hover {
+  background-color: blue;
+}
+
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#galeria .card {
+  border: 1px solid #666;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+#galeria .card img {
+  height: 200px;
+  width: 90% vw;
+}
+#galeria .btn-carrito {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  padding: 5px;
+  margin-left: 4px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#galeria .btn-carrito:hover {
+  background-color: blue;
+}
+
+#galeriaApi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#galeriaApi .card {
+  border: 1px solid #666;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+}
+#galeriaApi .card img {
+  height: 200px;
+  width: 90% vw;
+}
+#galeriaApi .btn-carrito {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  padding: 5px;
+  margin-left: 4px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#galeriaApi .btn-carrito:hover {
+  background-color: blue;
+}
+
+#carrito {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#carrito #listaCarrito {
+  list-style: none;
+  padding: 0;
+}
+#carrito #listaCarrito li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+#carrito #listaCarrito li .carrito {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+#carrito #listaCarrito li .btn-carrito {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  padding: 5px;
+  margin-left: 4px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#carrito #listaCarrito li .btn-carrito:hover {
+  background-color: blue;
+}
+#carrito #totalCarrito {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#form .field {
+  margin-bottom: 10px;
+}
+#form .field label {
+  display: block;
+  color: #777;
+}
+#form .field input {
+  text-align: center;
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  border-radius: 15px;
+}
+#form input[type=submit] {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  display: block;
+  padding: 6px 30px;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#form input[type=submit]:hover {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+.servicios-div {
+  text-align: center;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: 2px solid #e44d26;
+  border-radius: 20px;
+  height: auto;
+  margin: 30px;
+}
+.servicios-div input {
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  border-radius: 15px;
+}
+.servicios-div .btn {
+  background-color: #e44d26;
+  color: #f5f5f5;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.servicios-div .btn:hover {
+  background-color: blue;
+}
+.servicios-div .img-ser {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Nosotros {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+#Nosotros img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */

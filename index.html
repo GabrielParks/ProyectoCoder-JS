@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./acces/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./acces/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Union Gym</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-1 header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./images/logo_union-gym.png" alt="Logo de Union Gym con letras en color rojo y negro fondo blanco y dos brazos mostrando sus musculos">
+                </a>
+                <a class="navbar-brand header_marca" href="#"><Strong>UNION GYM</Strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Tienda">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Te damos la bienvenida a UNION GYM</h1>
+        <div >
+            <video class="mi-video" src="./video/spot_gym.mp4" autoplay controls></video>
+        </div>
+        <div id="Nosotros">
+            <h2>Nosotros</h2>
+            <p>
+                Nuestra Bienvenido a <strong>UNION GYM</strong>, tu destino para alcanzar tus metas demusculación y
+                bienestar físico. Nos enorgullece ser el lugar donde la fuerza se encuentra con ladedicación, y donde
+                cada paso que tomas te acerca más a tu mejor versión. Nuestra misión esproporcionar un entorno motivador
+                y de apoyo para hombres y mujeres que buscan esculpir suscuerpos y mejorar su salud. Contamos con un
+                equipo de entrenadores altamente calificados yapasionados que están comprometidos a guiarte en cada paso
+                de tu viaje fitness.
+            </p>
+            <h3>¿Qué nos hace diferentes?</h3>
+            <p>
+                En <strong>UNION GYM</strong>, nos especializamos en musculación, ofreciendo programas de entrenamiento
+                personalizado adaptados a las necesidades únicas de cada persona así comoentrenamiento libre. Nuestras
+                instalaciones cuentan con una amplia variedad de máquinas deúltima generación, diseñadas para abordar
+                todas las áreas de tu cuerpo y maximizar tusresultados. Ya seas principiante o un atleta experimentado,
+                encontrarás el apoyo y laexperiencia que necesitas en cada sesión de entrenamiento.
+            </p>
+            <img src="./images/maquinas.jpg" alt="bicicleta fija de color negro rodeada de maquinas funcionales">
+            <h3>Variedad de Servicios</h3>
+            <p>
+                Además de nuestro enfoque en musculación, también ofrecemos una amplia gama de servicios paramejorar tu
+                bienestar general. Contamos con una tienda interna donde puedes adquirir productos denutrición y
+                suplementos de alta calidad, seleccionados para complementar tu régimen deentrenamiento y acelerar tus
+                resultados. En <strong>UNION GYM</strong>, nos esforzamos por crearuna comunidad donde todos se sientan
+                bienvenidos y motivados para superar sus límites. Unite anosotros y descubre el poder de la musculación
+                con un equipo comprometido y un ambienteinspirador.
+            </p>
+            <p>
+                ¡Estamos emocionados de ser parte de tu viaje hacia la mejor versión de ti mismo!
+            </p>
+        </div>
+        <div id="Servicios">
+            <h2>Servicios</h2>
+            <div class="servicios-div">
+                <div id="servicios-div-1">
+                    <h3>Calcula tu IMC</h3>
+                    <input type="number" id="peso" class="input-form" name="peso" placeholder="Definí tu peso en kg"><br>
+                    <input type="number" id="altura" name="altura" placeholder="Definí tu altura en metros">
+                    <button id="boton1" class="btn" type="submit">Calcular</button><br>
+                </div>
+                <div>
+                    <img class="img-ser" src="./images/personal_training.png" alt="dibujo donde estan realizando ejercicios, un hombre haciendo sentadillas con una barra y la mujer con un par de mancuernas">
+                </div>
+            </div>
+        </div>
+        <div id="Tienda">
+            <h2>Bienvenido/a</h2>
+            <p id="textoAlt">Ingresa tu apellido y nombre para iniciar el pedido</p>
+            <div id="loginForm">
+                <input type="text" id="username" name="username" placeholder="Apellido y Nombre" required>
+                <br>
+                <button type="button" id="loginButton" class="btn">Ingresar</button>
+            </div>
+            <div id="messagesContainer">
+                <p id="loginMessage"></p>
+            </div>
+            <button id="logoutButton" class="hidden btn">Salir</button>
+        </div>
+        <div id="galeria"></div>
+        <div id="galeriaApi"></div>
+        <div class="hidden" id="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p id="totalCarrito">Total: $0.00</p>
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Apellido y Nombre</label>
+                    <input type="text" name="from_name" required id="from_name">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" required placeholder="Sucursal a retirar" id="message">
+                </div>
+                <div class="field">
+                    <label for="email_id">Email </label>
+                    <input type="text" name="email_id" required id="email_id">
+                </div>
+                <input type="submit" id="button" value="Confirmar Pedido">
+                <p>Recibiras un mail con las instrucciones del pago y envio</p>
+            </form>
+        </div>   
+    </main>
+    <footer class="container-fluid p-4 navbar-light">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <a class="img-footer" href="#"><img src="./images/logo_union-gym.png" alt="Logo de Union Gym con letras en color rojo y negro fondo blanco y dos brazos mostrando sus musculos"></a>
+            </div>
+            <div class="col-md-6 col-lg-3 enlaces">
+                <h3>Contactate</h3>
+                <ul>
+                    <li><i class="fa-solid fa-envelope" style="color: #18489a;"></i> uniongym2024@gmail.com</li>
+                    <li><i class="fa-brands fa-whatsapp" style="color: #0dbf31;"></i></li>
+                    <li> 1159949067</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 enlaces">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Tienda">Tienda</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 redes-sociales">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.facebook.com/profile.php?id=61557468510856" target="_blank"><i class="fa-brands fa-square-facebook fa-beat-fade fa-beat redes"></i>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('2IJem8uropc0zxjLD')</script>
+    <script src="./js/email.js"></script>
+    <script src="./js/calculo.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

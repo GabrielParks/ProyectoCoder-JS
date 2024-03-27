@@ -1,0 +1,22 @@
+.header{
+    background-color: $colorFondo;
+    a{
+        font-size: 20px;
+        text-shadow: 1px 1px grey;
+        color: $colorLetra;
+        .logo{
+            height: 90px;
+            float: left;
+        }
+        .header_marca{
+            font-family: ("Gill Sans");
+            font-weight: bold;
+        }       
+        strong:hover{
+            color: $colorHover;
+        }
+    }
+    a:hover{
+        color: $colorHover;
+    }
+}
